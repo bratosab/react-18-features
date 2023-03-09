@@ -1,5 +1,5 @@
 import reactLogo from "./assets/react.svg";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -16,6 +16,16 @@ function App() {
         </a>
       </div>
       <h1>React 18 features</h1>
+      <nav>
+          <ul>
+            <li>
+              <Link to={``}>State batching</Link>
+            </li>
+            <li>
+              <Link to={`concurrency`}>Concurrency</Link>
+            </li>
+          </ul>
+        </nav>
       <Outlet />
     </div>
   );

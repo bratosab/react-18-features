@@ -15,7 +15,10 @@ const router = createBrowserRouter([
         path: "",
         element: <StateBatching />,
       },
-      
+      {
+        path: "concurrency",
+        element: <Concurrency />,
+      },
     ],
   },
 ]);
